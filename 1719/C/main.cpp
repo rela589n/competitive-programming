@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 
+// 1719 C. Fighting Tournament
+// _cpp_
+
 using namespace std;
 
 #define MAX_WIN 2147483647
