@@ -1,10 +1,13 @@
 <?php
 
-fscanf(STDIN, '%u', $t);
+$format = str_repeat('%d ', 2 * 10 ** 5);
+
+fscanf(STDIN, '%d', $t);
 
 while ($t--) {
-    fscanf(STDIN, '%u', $n);
-    $ar = fscanf(STDIN, str_repeat('%u ', $n));
+    fscanf(STDIN, '%d', $n);
+
+    $ar = array_filter(fscanf(STDIN, $format));
 
     $maxP = 1;
     $maxR = 0;
@@ -39,7 +42,7 @@ while ($t--) {
     $maxL = $dmStarts[$maxR];
     $maxIt = $ar[$maxL];
 
-    fprintf(STDOUT, '%u %u %u'.PHP_EOL, $maxIt, $maxL + 1, $maxR + 1);
+    fprintf(STDOUT, '%d %d %d'.PHP_EOL, $maxIt, $maxL + 1, $maxR + 1);
 }
 /*
 
