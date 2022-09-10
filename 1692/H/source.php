@@ -27,31 +27,30 @@ while ($t--) {
 
         // matrix, holding optimal powers if start from the index
         $dm = array_fill(0, $mI, 1);// array_fill_keys ($occ, 1);
-        $dmEnds = array_keys($dm);
+        $dmStarts = array_keys($dm);
 
-        for ($i = $mI - 2; $i >= 0; --$i) {
+        for ($i = 1; $i < $mI; ++$i) {
             $currentPos = $occ[$i];
-            $nextPos = $occ[$i + 1];
+            $prevPos = $occ[$i - 1];
 
-            $gap = $nextPos - $currentPos - 1;
-
-            $powerWithGap = 1 + $dm[$i + 1] - $gap;
+            $gap = $currentPos - $prevPos - 1;
+            $powerWithGap = 1 + $dm[$i - 1] - $gap;
 
             if ($powerWithGap > 1) {
                 $dm[$i] = $powerWithGap;
-                $dmEnds[$i] = $dmEnds[$i + 1];
+                $dmStarts[$i] = $start = $dmStarts[$i - 1];
 
                 if ($maxP < $powerWithGap) {
                     $maxP = $powerWithGap;
-                    $maxL = $currentPos;
-                    $maxR = $occ[$dmEnds[$i]];
+                    $maxL = $occ[$start];
+                    $maxR = $currentPos;
                     $maxIt = $it;
                 }
             }
         }
     }
 
-    fprintf(STDOUT, '%u %u %u' . PHP_EOL, $maxIt, $maxL + 1, $maxR + 1);
+    fprintf(STDOUT, '%u %u %u'.PHP_EOL, $maxIt, $maxL + 1, $maxR + 1);
 }
 /*
 
@@ -70,6 +69,11 @@ We would check every number and:
 6
 1 2 2 3 2 2
 // 2 2 6
+
+1
+6
+2 2 3 2 2 1
+// 2 1 5
 
 1
 3
