@@ -11,16 +11,16 @@ while ($t--) {
 
     $dm = array_fill(0, $n, 1);
     $dmStarts = array_keys($dm);
-    $latestPosition = [];
+    $latestPosition = array_flip(array_reverse($ar, true));
 
     foreach ($ar as $currentPos => $it) {
-        if (!isset($latestPosition[$it])) {
-            $latestPosition[$it] = $currentPos;
+        $prevPos = $latestPosition[$it];
+        $gap = $currentPos - $prevPos - 1;
+
+        if (!~$gap) {
             continue;
         }
 
-        $prevPos = $latestPosition[$it];
-        $gap = $currentPos - $prevPos - 1;
         $powerWithGap = 1 + $dm[$prevPos] - $gap;
 
         if ($powerWithGap > 1) {
