@@ -1,13 +1,11 @@
 <?php
 
-$format = str_repeat('%d ', 2 * 10 ** 5);
-
 fscanf(STDIN, '%d', $t);
 
 while ($t--) {
     fscanf(STDIN, '%d', $n);
 
-    $sourceArr = array_filter(fscanf(STDIN, $format));
+    $sourceArr = fscanf(STDIN, str_repeat('%d ', $n));
 
     $ar = [];
     foreach ($sourceArr as $key => $el) {
