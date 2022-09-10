@@ -7,9 +7,7 @@ while ($t--) {
     $ar = fscanf(STDIN, str_repeat('%u ', $n));
 
     $maxP = 1;
-    $maxL = 0;
     $maxR = 0;
-    $maxIt = $ar[0];
 
     $dm = array_fill(0, $n, 1);
     $dmStarts = array_keys($dm);
@@ -27,15 +25,17 @@ while ($t--) {
 
         if ($powerWithGap > 1) {
             $dm[$currentPos] = $powerWithGap;
-            $dmStarts[$currentPos] = $dmStarts[$prevPos];
+            $dmStarts[$currentPos] = $start = $dmStarts[$prevPos];
+
+            if ($maxP < $powerWithGap) {
+                $maxP = $powerWithGap;
+                $maxR = $currentPos;
+            }
         }
 
         $latestPosition[$it] = $currentPos;
     }
 
-    $maxP = max($dm);
-    $pKeys = array_keys($dm, $maxP, true);
-    $maxR = end($pKeys);
     $maxL = $dmStarts[$maxR];
     $maxIt = $ar[$maxL];
 
