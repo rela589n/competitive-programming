@@ -1,5 +1,8 @@
 <?php
 
+// 1729 B. Decode String
+// _strings_, _crypto_, _greedy_, *800
+
 $al = range('a', 'z');
 
 fscanf(STDIN, '%d', $t);

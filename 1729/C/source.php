@@ -1,5 +1,8 @@
 <?php
 
+// 1729 C. Jumping on Tiles
+// _strings_, _constructive_, *1100
+
 $al = array_flip(range('a', 'z'));
 
 fscanf(STDIN, '%u', $t);

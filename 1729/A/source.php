@@ -1,6 +1,7 @@
 <?php
 
-// A. Two Elevators
+// 1729 A. Two Elevators
+// _math_, *800
 
 fscanf(STDIN, '%d', $t);
 
