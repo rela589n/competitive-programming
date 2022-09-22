@@ -1,7 +1,7 @@
 <?php
 
 // 1717 B. Madoka and Underground Competitions
-// _constructive_, _matrix_, _mod_
+// _constructive_, _matrix_, _mod_, *1100
 
 fscanf(STDIN, '%u', $t);
 

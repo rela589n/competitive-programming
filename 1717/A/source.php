@@ -1,7 +1,7 @@
 <?php
 
 // 1717 A. Madoka and Strange Thoughts
-// _math_, _numbers_, _gcd_, _lcm_
+// _math_, _numbers_, _gcd_, _lcm_, *800 (really??)
 
 fscanf(STDIN, '%u', $t);
 
@@ -12,6 +12,8 @@ while ($t--) {
 }
 
 /*
+Algorithm explanation:
+
 g = gcd(a,b)
 l = lcm(a,b)
 l = a * b / g
