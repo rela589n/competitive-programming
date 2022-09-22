@@ -1,5 +1,8 @@
 <?php
 
+// 1713 A. Traveling Salesman Problem
+// _impl_, _geometry_, _cartesian_, *800
+
 fscanf(STDIN, '%u', $t);
 
 while ($t--) {

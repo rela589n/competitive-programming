@@ -1,6 +1,11 @@
 <?php
 
+// 1713 B. Optimal Reduction
+// _sorting_, _two_pointers_, *1000
+// The algorithm to check if array is a single mountain.
+
 fscanf(STDIN, '%u', $t);
+
 while ($t--) {
     fscanf(STDIN, '%u', $n);
 

@@ -1,7 +1,7 @@
 <?php
 
 // 1713 C. Build Permutation
-// _dp_, _math_, _constructive_
+// _dp_, _math_, _constructive_, _indexes_, *1200
 
 const N = 100_000;
 
@@ -91,13 +91,9 @@ while ($t--) {
 0 1 2 3 | 4  5
         | 9  9
 
-    | 2 1 - not possible because of 1 here
-0 1 | 2 3
-    | 4 4
-
 0 3 2 1
 0 1 2 3
-
+0 4 4 4
 
 0
 0
