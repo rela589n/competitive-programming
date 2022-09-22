@@ -1,5 +1,8 @@
 <?php
 
+// 1692 C. Where's the Bishop?
+// _impl_, _matrix_, *800
+
 $inp = fopen('php://stdin', 'rb');
 
 fscanf($inp, '%d', $t);

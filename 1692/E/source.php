@@ -1,5 +1,12 @@
 <?php
 
+// 1692 E. Binary Deque
+// _impl_, _two_pointers_, _binary_array_, *1200
+// Find the longest possible subarray which makes up desired sum.
+//  1. Initialize sum from array prefix. The subarray is [0, K];
+//  2. Shift Left pointer by one and Right pointer by necessary amount;
+//  3. Check if current length greater than calculated up to moment.
+
 fscanf(STDIN, '%d', $t);
 
 while ($t--) {
@@ -64,12 +71,6 @@ while ($t--) {
     echo ($n - $maxLen).PHP_EOL;
 }
 /*
-
-
-Find the longest possible subarray which makes up desired sum.
-1. Initialize sum from array prefix. The subarray is [0, K];
-2. Shift Left pointer by one and Right pointer by necessary amount;
-3. Check if current length greater than calculated up to moment.
 
 1
 5 1

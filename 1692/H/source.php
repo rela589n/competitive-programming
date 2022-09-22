@@ -1,5 +1,8 @@
 <?php
 
+// 1692 H. Gambling (Casino)
+// _dp_, _greedy_, _math_, *1700
+
 fscanf(STDIN, '%d', $t);
 
 while ($t--) {

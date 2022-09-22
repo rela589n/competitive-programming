@@ -1,5 +1,7 @@
 <?php
 
+// 1692 B. All Distinct
+// _greedy_, _sorting_, *800
 
 $inp = fopen('php://stdin', 'rb');
 

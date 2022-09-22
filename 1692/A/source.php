@@ -1,5 +1,8 @@
 <?php
 
+// 1692 A. Marathon
+// _impl_, *800
+
 $inp = fopen('php://stdin', 'rb');
 
 fscanf($inp, '%d', $t);

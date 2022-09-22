@@ -1,5 +1,8 @@
 <?php
 
+// 1692 F. 3SUM
+// _math_, _brute_, *1300
+
 fscanf(STDIN, '%d', $t);
 
 while ($t--) {

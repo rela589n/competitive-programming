@@ -1,5 +1,8 @@
 <?php
 
+// 1692 D. The Clock
+// _impl_, _time_, _brute_, *1100
+
 fscanf(STDIN, '%d', $t);
 
 while ($t--) {

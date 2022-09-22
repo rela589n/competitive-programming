@@ -1,5 +1,8 @@
 <?php
 
+// 1692 G. 2^Sort
+// _sorting_, _dp_, _two_pointers_, _array_, *1400
+
 $inp = fopen('php://stdin', 'rb');
 
 fscanf($inp, '%d', $t);
