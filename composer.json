@@ -1,0 +1,17 @@
+{
+    "name": "rela589n/codeforces",
+    "autoload": {
+        "psr-4": {
+            "Rela589n\\Codeforces\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rela589n",
+            "email": "zsidelnik@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
